@@ -1,0 +1,74 @@
+{
+  "exe": "@ENGINE@",
+  "args": [
+    "--pack",
+    "@DATA_ROOT@/packs/iq3_s",
+    "--native",
+    "@DATA_ROOT@/models/IQ3_S/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf",
+    "--ple-gguf",
+    "@DATA_ROOT@/models/IQ3_S/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf",
+    "--expert-profile",
+    "@STRATA_ROOT@/data/expert-profile.bin",
+    "--expert-cache",
+    "auto",
+    "--spec",
+    "4",
+    "--spec-min-p",
+    "0.5",
+    "--mtp",
+    "@DATA_ROOT@/mtp/rt",
+    "--max-context",
+    "262144",
+    "--kv",
+    "int8",
+    "--resident-experts",
+    "--remote-expert-opt",
+    "--prefill",
+    "16384",
+    "--kv-resident",
+    "32768",
+    "--vision",
+    "--pipeline-windows",
+    "2"
+  ],
+  "cwd": "@STRATA_ROOT@",
+  "tokenizer": "@DATA_ROOT@/packs/iq3_s/tokenizer",
+  "model_name": "qwen3.8-flash-next-iq3_s",
+  "log": "@RUN_ROOT@/strata-single-xtx.log",
+  "lib_dirs": [
+    "@ROCM_ROOT@/lib"
+  ],
+  "port": 18080,
+  "backend": "hip",
+  "env": {
+    "STRATA_HIPBLASLT_TUNING": "@TUNING_ROOT@/gfx1100-hipblaslt-100401.txt",
+    "STRATA_RESIDENT_PIN": "0",
+    "STRATA_HIP_WMMA": "1",
+    "STRATA_SELECT_WMMA": "1",
+    "STRATA_STAGE_PIN": "0",
+    "LD_LIBRARY_PATH": "@ROCM_ROOT@/lib",
+    "ROCM_PATH": "@ROCM_ROOT@",
+    "HIP_PATH": "@ROCM_ROOT@",
+    "STRATA_HIPBLASLT_VERBOSE": "1",
+    "HIP_VISIBLE_DEVICES": "@XTX_GPU@"
+  },
+  "gpu": [
+    "@XTX_GPU@"
+  ],
+  "gpus_asked": true,
+  "host": "127.0.0.1",
+  "open_browser": false,
+  "vision": {
+    "exe": "@VISION_ENGINE@",
+    "mmproj": "@DATA_ROOT@/models/mmproj-Qwen3.8-Flash-Next-BF16.gguf",
+    "gpu": false,
+    "max_tokens": 300,
+    "threads": 8,
+    "model": "@DATA_ROOT@/models/IQ3_S/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf"
+  },
+  "sampling": {
+    "presence_penalty": 0,
+    "frequency_penalty": 0,
+    "repetition_penalty": 1
+  }
+}

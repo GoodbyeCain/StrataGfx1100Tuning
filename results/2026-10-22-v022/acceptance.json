@@ -1,0 +1,113 @@
+{
+  "python_regression": {
+    "clean": {
+      "structured_responses_effort": 62,
+      "additional_v022": 37
+    },
+    "patched": {
+      "structured_responses_effort": 64,
+      "additional_v022": 37
+    }
+  },
+  "numerical_checks": {
+    "exact_scorer_full_gpus": 2,
+    "fp16_select_selftest_gpus": 2,
+    "prompt_attention_clean_and_patched_gpus": 4,
+    "passed": true
+  },
+  "patched_dual_api": {
+    "coding": [
+      {
+        "case": "dedupe_last",
+        "wall_s": 2.1503577589901397,
+        "finish_reason": "stop",
+        "passed": true
+      },
+      {
+        "case": "clamp",
+        "wall_s": 1.6101797569863265,
+        "finish_reason": "stop",
+        "passed": true
+      },
+      {
+        "case": "run_length",
+        "wall_s": 2.006365484005073,
+        "finish_reason": "stop",
+        "passed": true
+      },
+      {
+        "case": "merge_counts",
+        "wall_s": 1.6637715729884803,
+        "finish_reason": "stop",
+        "passed": true
+      },
+      {
+        "case": "balanced",
+        "wall_s": 1.499354775995016,
+        "finish_reason": "stop",
+        "passed": true
+      },
+      {
+        "case": "binary_search",
+        "wall_s": 1.904077639002935,
+        "finish_reason": "stop",
+        "passed": true
+      }
+    ],
+    "tool_and_final_schema_passed": true,
+    "long": {
+      "needle": {
+        "passed": true,
+        "wall_s": 85.86660267499974,
+        "usage": {
+          "prompt_tokens": 261036,
+          "completion_tokens": 50,
+          "total_tokens": 261086,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 261036,
+          "prompt_ms": 85263.7,
+          "prompt_per_token_ms": 0.327,
+          "prompt_per_second": 3061.5,
+          "predicted_n": 50,
+          "predicted_ms": 506.5,
+          "predicted_per_token_ms": 10.13,
+          "predicted_per_second": 98.7,
+          "draft_n": 40,
+          "draft_n_accepted": 36
+        }
+      },
+      "continuation": {
+        "passed": true,
+        "wall_s": 0.4038353790092515,
+        "usage": {
+          "prompt_tokens": 261115,
+          "completion_tokens": 9,
+          "total_tokens": 261124,
+          "prompt_tokens_details": {
+            "cached_tokens": 261086
+          }
+        },
+        "timings": {
+          "cache_n": 261086,
+          "prompt_n": 29,
+          "prompt_ms": 205.4,
+          "prompt_per_token_ms": 7.083,
+          "prompt_per_second": 141.2,
+          "predicted_n": 9,
+          "predicted_ms": 123.1,
+          "predicted_per_token_ms": 13.678,
+          "predicted_per_second": 73.1,
+          "draft_n": 6,
+          "draft_n_accepted": 6
+        }
+      }
+    },
+    "vision_passed": true,
+    "visible_responses_sse_completed": true
+  }
+}

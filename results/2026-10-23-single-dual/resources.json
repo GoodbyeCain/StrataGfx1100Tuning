@@ -1,0 +1,142 @@
+{
+  "dual": {
+    "min_available_ram_gib": 19.008468627929688,
+    "peak_vram_gib": {
+      "7900_xtx": 23.922462463378906,
+      "7900_xt": 19.698455810546875
+    },
+    "peak_swap_bytes": 0,
+    "swap_out_delta_bytes": 0,
+    "lt_summaries": {
+      "pair1-dual": [
+        [
+          "0",
+          "2",
+          "2"
+        ],
+        [
+          "0",
+          "2",
+          "2"
+        ],
+        [
+          "635279",
+          "0",
+          "0"
+        ],
+        [
+          "480625",
+          "0",
+          "0"
+        ]
+      ],
+      "pair0-dual": [
+        [
+          "0",
+          "2",
+          "2"
+        ],
+        [
+          "0",
+          "2",
+          "2"
+        ],
+        [
+          "624422",
+          "0",
+          "0"
+        ],
+        [
+          "472406",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "fallback_shapes": {
+      "pair1-dual": [
+        "dtype=bf16 T=64 N=64 K=320 ldy=64",
+        "dtype=f16 T=64 N=64 K=320 ldy=64"
+      ],
+      "pair0-dual": [
+        "dtype=bf16 T=64 N=64 K=320 ldy=64",
+        "dtype=f16 T=64 N=64 K=320 ldy=64"
+      ]
+    }
+  },
+  "single-xtx": {
+    "min_available_ram_gib": 12.425670623779297,
+    "peak_vram_gib": {
+      "7900_xtx": 23.97093963623047,
+      "7900_xt": 0.025115966796875
+    },
+    "peak_swap_bytes": 0,
+    "swap_out_delta_bytes": 0,
+    "lt_summaries": {
+      "pair1-single-xtx": [
+        [
+          "0",
+          "2",
+          "2"
+        ],
+        [
+          "1822352",
+          "30",
+          "18"
+        ]
+      ],
+      "pair0-single-xtx": [
+        [
+          "0",
+          "2",
+          "2"
+        ],
+        [
+          "1096784",
+          "20",
+          "12"
+        ]
+      ]
+    },
+    "fallback_shapes": {
+      "pair1-single-xtx": [
+        "dtype=bf16 T=64 N=64 K=320 ldy=64",
+        "dtype=f16 T=1024 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=1174 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=121 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=1348 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=14228 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=15267 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=15360 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=2213 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=31488 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=337 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=4096 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=4696 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=484 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=56912 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=61068 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=61440 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=64 N=64 K=320 ldy=64",
+        "dtype=f16 T=7872 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=8852 N=2560 K=2560 ldy=2560"
+      ],
+      "pair0-single-xtx": [
+        "dtype=bf16 T=64 N=64 K=320 ldy=64",
+        "dtype=f16 T=1024 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=1344 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=14227 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=15360 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=2214 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=31488 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=336 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=4096 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=56908 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=61440 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=64 N=64 K=320 ldy=64",
+        "dtype=f16 T=7872 N=2560 K=2560 ldy=2560",
+        "dtype=f16 T=8856 N=2560 K=2560 ldy=2560"
+      ]
+    }
+  }
+}

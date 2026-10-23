@@ -1,0 +1,75 @@
+{
+  "baseline": "dual",
+  "candidate": "single-xtx",
+  "rounds": 2,
+  "cases": [
+    {
+      "kind": "fresh",
+      "target": 8192,
+      "baseline": {
+        "wall_s": 8.649519255501218,
+        "pp_tps": 1410.4,
+        "tg_tps": 90.8
+      },
+      "candidate": {
+        "wall_s": 8.888252186996397,
+        "pp_tps": 1528.4499999999998,
+        "tg_tps": 73.05000000000001
+      },
+      "wall_increase_pct": 2.760071680785514,
+      "pp_change_pct": 8.36996596710151,
+      "tg_change_pct": -19.548458149779723
+    },
+    {
+      "kind": "fresh",
+      "target": 131072,
+      "baseline": {
+        "wall_s": 47.112659700011136,
+        "pp_tps": 2983.75,
+        "tg_tps": 81.65
+      },
+      "candidate": {
+        "wall_s": 65.13239219498064,
+        "pp_tps": 2127.75,
+        "tg_tps": 73.65
+      },
+      "wall_increase_pct": 38.24817492731205,
+      "pp_change_pct": -28.688730624214497,
+      "tg_change_pct": -9.797917942437229
+    },
+    {
+      "kind": "fresh",
+      "target": 260000,
+      "baseline": {
+        "wall_s": 87.69871609400434,
+        "pp_tps": 3073.2,
+        "tg_tps": 85.0
+      },
+      "candidate": {
+        "wall_s": 129.46770508149348,
+        "pp_tps": 2069.8,
+        "tg_tps": 67.94999999999999
+      },
+      "wall_increase_pct": 47.62782267270242,
+      "pp_change_pct": -32.650006507874515,
+      "tg_change_pct": -20.058823529411775
+    },
+    {
+      "kind": "cached",
+      "target": 131072,
+      "baseline": {
+        "wall_s": 11.149408612996922,
+        "pp_tps": 167.2,
+        "tg_tps": 98.2
+      },
+      "candidate": {
+        "wall_s": 13.836189627996646,
+        "pp_tps": 119.9,
+        "tg_tps": 78.9
+      },
+      "wall_increase_pct": 24.097968854309727,
+      "pp_change_pct": -28.28947368421052,
+      "tg_change_pct": -19.653767820773925
+    }
+  ]
+}

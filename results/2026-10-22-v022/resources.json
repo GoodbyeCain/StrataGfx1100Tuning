@@ -1,0 +1,132 @@
+{
+  "clean": {
+    "min_available_ram_gib": 19.062355041503906,
+    "peak_vram_gib": {
+      "7900_xtx": 23.928558349609375,
+      "7900_xt": 19.6787109375
+    },
+    "peak_swap_bytes": 0,
+    "swap_out_delta_bytes": 0,
+    "lt_summaries": {
+      "pair1-clean": [
+        [
+          "0",
+          "2",
+          "2"
+        ],
+        [
+          "0",
+          "2",
+          "2"
+        ],
+        [
+          "635099",
+          "0",
+          "0"
+        ],
+        [
+          "480483",
+          "0",
+          "0"
+        ]
+      ],
+      "pair0-clean": [
+        [
+          "0",
+          "2",
+          "2"
+        ],
+        [
+          "0",
+          "2",
+          "2"
+        ],
+        [
+          "624306",
+          "0",
+          "0"
+        ],
+        [
+          "472454",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "fallback_shapes": {
+      "pair1-clean": [
+        "dtype=bf16 T=64 N=64 K=320 ldy=64",
+        "dtype=f16 T=64 N=64 K=320 ldy=64"
+      ],
+      "pair0-clean": [
+        "dtype=bf16 T=64 N=64 K=320 ldy=64",
+        "dtype=f16 T=64 N=64 K=320 ldy=64"
+      ]
+    }
+  },
+  "patched": {
+    "min_available_ram_gib": 19.05453109741211,
+    "peak_vram_gib": {
+      "7900_xtx": 23.946868896484375,
+      "7900_xt": 19.707801818847656
+    },
+    "peak_swap_bytes": 0,
+    "swap_out_delta_bytes": 0,
+    "lt_summaries": {
+      "pair0-patched": [
+        [
+          "0",
+          "2",
+          "2"
+        ],
+        [
+          "0",
+          "2",
+          "2"
+        ],
+        [
+          "624422",
+          "0",
+          "0"
+        ],
+        [
+          "472406",
+          "0",
+          "0"
+        ]
+      ],
+      "pair1-patched": [
+        [
+          "0",
+          "2",
+          "2"
+        ],
+        [
+          "0",
+          "2",
+          "2"
+        ],
+        [
+          "635279",
+          "0",
+          "0"
+        ],
+        [
+          "480625",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "fallback_shapes": {
+      "pair0-patched": [
+        "dtype=bf16 T=64 N=64 K=320 ldy=64",
+        "dtype=f16 T=64 N=64 K=320 ldy=64"
+      ],
+      "pair1-patched": [
+        "dtype=bf16 T=64 N=64 K=320 ldy=64",
+        "dtype=f16 T=64 N=64 K=320 ldy=64"
+      ]
+    }
+  }
+}

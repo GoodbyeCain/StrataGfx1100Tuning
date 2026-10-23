@@ -1,0 +1,29 @@
+{
+  "upstream_tag": "v0.2.2",
+  "upstream_commit": "011c9e600a93bbc9fd451c563501b5831c32bbca",
+  "engine_version": "0.1.47",
+  "llama_cpp_commit": "3cf03257f219afbe7334045ff7c6a06ac68c627d",
+  "measured_engine_sha256": "a0ebcebc4b10d769e9f3fa7fbb1ebccf279acd1648930a1bd337e141090ba681",
+  "patch_sha256": "eafa7c5e4023194d36b452e915466b46cea7ebecb7c59a239c3140793f9b8252",
+  "lt_table_sha256": "c5f0ae29587f9bb3c0c7caa0e8fa2de3901256c5ba3b2a5f682b8f970bf1b42e",
+  "hardware": {
+    "cpu": "Ryzen 7 9700X",
+    "ram_gib_approx": 59,
+    "gpus": [
+      "RX 7900 XTX 24GB",
+      "RX 7900 XT 20GB"
+    ],
+    "gpu_arch": "gfx1100"
+  },
+  "software": {
+    "os": "Ubuntu Linux",
+    "kernel": "7.0.0-38-generic",
+    "amdgpu": "7.1.9.31600000",
+    "hip": "7.16.26385",
+    "hipblaslt_version": 100401,
+    "host_compiler": "GCC 15.2.0",
+    "hip_compiler": "Clang 24.0.0"
+  },
+  "model": "Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S",
+  "privacy": "Whitelisted synthetic measurements only; no hostnames, private addresses, user paths, credentials, session IDs, raw production configs or service logs."
+}
